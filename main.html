@@ -13,11 +13,9 @@
 <body>
 
 	<nav>
-	<a> Главная </a>
-	<a> Комплектующие </a>
-	<a> Услуги </a>
-	<a> Компания </a>
-	<a> Поддержка </a>   
+	<a href="main.html"> Главная </a>
+	<a href="#cont"> Комплектующие </a>
+	<a href="#usluga"> Услуги </a>  
 	
 	<a href="main.html"> <img class="logonav" src="image/1.png" alt="Не работает"> </a>
 </nav> 
@@ -26,7 +24,7 @@
 
 
 
-	<div class="all">
+	<div class="all" id="#all">
 		<input checked type="radio" name="respond" id="desktop">
 			<article id="slider">
 					<input checked type="radio" name="slider" id="switch1">
@@ -65,7 +63,7 @@
 
 
 				
-				<div class="block">
+				<div class="block" id="usluga">
 				
 					<div class="img"> </div>
 					<div class="opis">
@@ -96,7 +94,7 @@
 				</div>
 				</div>
 				
-<div class="cont">
+<div class="cont" id="cont">
 
 <div class="card">
 	<a > KASUMOV PLAYER </a>
@@ -249,9 +247,7 @@
 
 </div>
 
-
-
-
+<div class="butup" onClick="scrollTopTop()"> </div>
 
 
 
@@ -311,6 +307,26 @@
   <a href="https://twitter.com/"> <li id="li1"><img src="image/tw.png">  </li> </a>
   <a href="https://www.youtube.com/"> <li id="li1"><img src="image/you.png"> </li> </a>
   </ul>
+
+
+<script>
+
+
+ window.addEventListener('scroll', function() {
+ 	var scroll = document.querySelector('.butup');
+ 	scroll.classList.toggle("active", window.scrollY>1000)
+ })
+ 
+ function scrollTopTop() {
+ 	window.scrollTo ({
+ 		top:0,
+	  behavior: 'smooth'
+	 	
+	 	}) 
+ }
+
+ </script>
+
 
 
 

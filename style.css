@@ -487,3 +487,24 @@ h3 {
 	color: white;
 
 }
+
+.butup {
+	
+	position: fixed;
+	bottom: 10px;
+	right: 40px;
+	width: 70px;
+	height: 70px;
+	z-index: 10;
+	background-image: url(image/butup.png);
+	background-size: cover;
+	cursor: pointer;
+	visibility: hidden;
+	opasity: 0;
+	transition: 0.5s;
+}
+
+.butup.active{
+	visibility: visible;
+	opacity: 1;
+}
