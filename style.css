@@ -4,11 +4,29 @@ body {
     background-size: 100% 310%;
     background-repeat: no-repeat;
 }
+nav {
+	z-index: 5;
+	background: rgba(34, 34, 34, 0.8);
+	width: 101%;
+	height: 40px;
+	padding-top: 22px;
+	position: fixed;
+	margin-top: -9px;
+	margin-left: -8px;
+	overflow: hidden;
+}
+.logonav {
+	height: 300%;
+	width: 21%;
+	margin-left: 82%;
+	margin-top: -4.1%;
+} 
+
 
 #slider { /*положение слайдера*/
     
      text-align: center;
-    top: 14.9%;
+    top: 33%;
     left: 15%;
     width: 70%;
    position: absolute;
@@ -327,7 +345,7 @@ h1 {
 	color: white;
 	z-index: 5;
 	left: -8px;
-	top: 3400px;
+	top: 6300px;
 	width: 101%;
 	height: 250px;
 	display: flex;
@@ -397,5 +415,75 @@ text-transform: uppercase;
 }
 .hide {
 display: none;
+
+}
+
+.card {
+  box-shadow: -6px 10px 20px 0 pink;
+  max-width: 300px;
+  position: relative;
+  margin-top: 10%;
+  text-align: center;
+  font-family: arial;
+ 
+}
+
+
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.knop {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: orange;
+  background-color: rgb(15, 15, 15);
+  text-align: center;
+  width: 92%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+
+
+p {
+	color: white;
+	font-family: Verdana;
+}
+
+.cont {
+	position: absolute;
+	margin-top: 3200px;
+	margin-left: 20%;
+	display: flex;
+	flex-direction: center;
+	margin-right: 200px; 
+	width: 60%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+
+}
+
+.tow {
+	color: white;
+}
+
+.card:hover {
+	box-shadow: -2px 4px 100px purple;
+
+}
+
+.opisanie {
+	padding-left: 5px;
+	text-align: left;
+	line-height: 32px;
+}
+
+h3 {
+	color: white;
 
 }
